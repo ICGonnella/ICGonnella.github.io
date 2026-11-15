@@ -1,0 +1,70 @@
+[
+  {
+    "id": "gonnella2026wasserstein",
+    "selected": true,
+    "type": "preprint",
+    "title": "A Dynamical Approximation Scheme on the Stiefel Manifold for Wasserstein Gradient Flows",
+    "authors": ["Isabella Carla Gonnella", "Olga Mula", "Federico Pichi", "Gianluigi Rozza"],
+    "year": 2026,
+    "date": "2026-07-19",
+    "venue": "arXiv:2607.17235",
+    "arxiv": "2607.17235",
+    "doi": "10.48550/arXiv.2607.17235"
+  },
+  {
+    "id": "venier2026bifurcation",
+    "selected": true,
+    "type": "preprint",
+    "title": "Stochastic bifurcation analysis via polynomial chaos: consistency and convergence of branch-approximating solutions",
+    "authors": ["Giacomo Venier", "Isabella Carla Gonnella", "Federico Pichi", "Gianluigi Rozza"],
+    "year": 2026,
+    "date": "2026-05-29",
+    "venue": "arXiv:2605.31288",
+    "arxiv": "2605.31288",
+    "doi": "10.48550/arXiv.2605.31288"
+  },
+  {
+    "id": "gonnella2026stochastic",
+    "selected": true,
+    "type": "article",
+    "title": "A Stochastic Perturbation Approach to Nonlinear Bifurcating Problems",
+    "authors": ["Isabella Carla Gonnella", "Moaad Khamlich", "Federico Pichi", "Gianluigi Rozza"],
+    "year": 2026,
+    "date": "2026-06-01",
+    "venue": "Journal of Scientific Computing",
+    "volume": "108",
+    "number": "1",
+    "pages": "20",
+    "arxiv": "2402.16803",
+    "doi": "10.1007/s10915-026-03338-0"
+  },
+  {
+    "id": "gonnella2026nonlinear",
+    "selected": false,
+    "type": "incollection",
+    "title": "Nonlinear Reduction Strategies for Data Compression: A Comprehensive Comparison from Diffusion to Advection Problems",
+    "authors": ["Isabella Carla Gonnella", "Federico Pichi", "Gianluigi Rozza"],
+    "year": 2026,
+    "date": "2026-02-24",
+    "venue": "Scientific Machine Learning: Emerging Topics",
+    "series": "SEMA SIMAI Springer Series",
+    "volume": "42",
+    "pages": "177--198",
+    "publisher": "Springer",
+    "arxiv": "2501.12816",
+    "doi": "10.1007/978-3-032-11527-0_9"
+  },
+  {
+    "id": "gonnella2023deep",
+    "type": "article",
+    "title": "A two-stage deep learning architecture for model reduction of parametric time-dependent problems",
+    "authors": ["Isabella Carla Gonnella", "Martin W. Hess", "Giovanni Stabile", "Gianluigi Rozza"],
+    "year": 2023,
+    "date": "2023-11-01",
+    "venue": "Computers & Mathematics with Applications",
+    "volume": "149",
+    "pages": "115--127",
+    "arxiv": "2301.09926",
+    "doi": "10.1016/j.camwa.2023.08.026"
+  }
+]

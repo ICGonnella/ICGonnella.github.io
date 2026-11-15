@@ -1,0 +1,72 @@
+{
+  "name": "Isabella Carla Gonnella",
+  "role": "PhD candidate",
+  "affiliation": "SISSA",
+  "location": "Trieste, Italy",
+  "url": "https://icgonnella.github.io/",
+  "email": "igonnell@sissa.it",
+  "scholar": "https://scholar.google.com/citations?user=Lejdc3QAAAAJ",
+  "linkedin": "https://www.linkedin.com/in/isabella-carla-gonnella-225a92213/",
+  "portrait": "img/IMG_4990.JPG",
+  "description": "PhD candidate at SISSA working at the intersection of numerical analysis and machine learning, with a focus on gradient flows, model order reduction and the mathematical foundations of learning algorithms.",
+  "about": [
+    "Hi, I’m Isabella! I’m a final-year PhD candidate in Mathematical Analysis, Modelling and Applications at SISSA in Trieste, supervised by Prof. Gianluigi Rozza and Dr. Federico Pichi at SISSA, together with Prof. Olga Mula at the University of Vienna.",
+    "My research lies at the intersection of numerical analysis and machine learning, where I explore how mathematical structure can guide the design of efficient computational methods. My work focuses on reduced-order approximations of Wasserstein gradient flows and stochastic approaches to nonlinear bifurcation problems. I’m also interested in the mathematical foundations of learning algorithms, particularly in modelling their dynamics and characterising their convergence properties."
+  ],
+  "education": [
+    {
+      "date": "2023–present",
+      "title": "PhD in Mathematical Analysis, Modelling and Applications",
+      "detail": "SISSA · Trieste, Italy",
+      "url": "https://www.sissa.it/"
+    },
+    {
+      "date": "2021–2023",
+      "title": "MSc in Data Science and Scientific Computing",
+      "detail": "University of Trieste · 110/110 cum laude",
+      "url": "https://www.units.it/"
+    }
+  ],
+  "activities": [
+    {
+      "date": "2025–2026",
+      "title": "President, SISSA SIAM Student Chapter",
+      "detail": "Academic community and scientific activities at SISSA.",
+      "url": "https://mathematics.sissa.it/en/sissa-siam-chapter-mathematics"
+    },
+    {
+      "date": "2024–2025",
+      "title": "Vice-President, SISSA SIAM Student Chapter",
+      "detail": "Together with Mustafa Ramadan.",
+      "url": "https://www.math.sissa.it/content/sissa-siam-student-chapter/index.html"
+    }
+  ],
+  "talks": [
+    {
+      "date": "2025",
+      "title": "A metric perspective on Reduced Order Models: Wasserstein Gradient Flows for Advection-Diffusion dynamics",
+      "detail": "Young Mathematicians in Model Order Reduction · Trieste",
+      "url": "https://mathlab.github.io/ymmor2025/useful_files/program_boa.pdf"
+    }
+  ],
+  "awards": [
+    {
+      "date": "2021",
+      "title": "SISSA fellowship",
+      "detail": "Two-year merit scholarship for the MSc in Data Science and Scientific Computing."
+    },
+    {
+      "date": "2021",
+      "title": "Collegio Universitario Luciano Fonda scholarship",
+      "detail": "Two-year merit scholarship."
+    }
+  ],
+  "address": ["SISSA — Mathematics Area", "Via Bonomea 265", "34136 Trieste, Italy"],
+  "cv_file": "Gonnella_CV_05032026.pdf",
+  "upcoming_events": [
+    {
+      "title": "SISSA Women in Mathematics 2027",
+      "year": "2027"
+    }
+  ]
+}

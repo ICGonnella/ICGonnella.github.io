@@ -1,0 +1,160 @@
+% Editable conversion of Gonnella_CV_05032026.docx.
+% Compile with XeLaTeX (also on Overleaf); no external assets are required.
+% The text is retained from the Word document, including its spelling.
+% Measurements are in bp (1/72 inch); 8.5 bp body and section headings.
+% Trebuchet MS is used when installed; Cabin is the portable fallback.
+\RequirePackage{fix-cm}
+\documentclass[a4paper]{article}
+\usepackage{fontspec}
+\IfFontExistsTF{Trebuchet MS}{\setmainfont{Trebuchet MS}}{\setmainfont{Cabin}}
+\usepackage[a4paper,left=29.55bp,right=28.3bp,top=18bp,bottom=14bp]{geometry}
+\usepackage{xcolor,array,longtable,tikz}
+\usepackage[unicode,hidelinks]{hyperref}
+\hypersetup{pdftitle={Isabella Carla Gonnella -- Curriculum Vitae},pdfauthor={Isabella Carla Gonnella}}
+\urlstyle{same}
+\definecolor{cvblue}{HTML}{2F3478}
+\definecolor{cvpale}{HTML}{F0F5FA}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\LTpre}{0pt}
+\setlength{\LTpost}{0pt}
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\newlength{\cvlabelwidth}\setlength{\cvlabelwidth}{88.8bp}
+\newlength{\colgap}\setlength{\colgap}{9.5bp}
+\newlength{\detailwidth}\setlength{\detailwidth}{\dimexpr\textwidth-\cvlabelwidth-\colgap\relax}
+\newlength{\narrowwidth}\setlength{\narrowwidth}{\detailwidth}
+% Shared spacing between list entries, matching the presentations.
+\newlength{\cvitemsep}\setlength{\cvitemsep}{4.5bp}
+\newcommand{\cvrowend}{\\\noalign{\vskip\cvitemsep}}
+% Non-bold body text is italic; bold text and section labels stay upright.
+\newcommand{\cvbold}[1]{\textbf{\upshape #1}}
+\newcommand{\cvlabel}[1]{\leavevmode{\color{cvblue}\upshape\bfseries\fontsize{8.5bp}{10.2bp}\selectfont\strut #1}}
+\newcommand{\cvnarrow}[1]{\begin{minipage}[t]{\narrowwidth}\raggedright\strut #1\end{minipage}}
+\newcommand{\cvdivider}{\noalign{\vskip 6bp}%
+ {\color{cvblue!20}\rule{\cvlabelwidth}{0.6bp}} &
+ {\color{cvblue!20}\rule{\narrowwidth}{0.6bp}}\\*[4bp]}
+\newcommand{\cvheading}[1]{\cvlabel{#1} & \\*[5bp]}
+% Location and dates at left; position, institution and description at right.
+\newcommand{\cventry}[5]{\cvbold{#1}\par\vspace{2.55bp}\textit{#2} &
+ \cvbold{#3}\par\vspace{2.55bp}#4%
+ \if\relax\detokenize{#5}\relax\else\par\vspace{6.65bp}#5\fi\cvrowend}
+% One row per item keeps its text together across page breaks.
+\newcommand{\cvitem}[2]{\cvlabel{#1} & #2\cvrowend}
+\newcommand{\cvpublication}[2]{\cvlabel{#1} &
+ #2\cvrowend}
+\begin{document}
+\fontsize{8.5bp}{10.2bp}\selectfont
+\begin{tikzpicture}[remember picture,overlay]
+ \fill[cvpale] (current page.north west) rectangle ([yshift=-78.05bp]current page.north east);
+ \node[anchor=north west,inner sep=0pt,text=cvblue] at ([xshift=29.55bp,yshift=-19.32bp]current page.north west)
+ {\fontsize{23.5bp}{28bp}\selectfont\bfseries Isabella Carla Gonnella};
+ \node[anchor=north west,inner sep=0pt,text=cvblue] at ([xshift=29.55bp,yshift=-52bp]current page.north west)
+ {\bfseries PhD student, ORCID: \href{https://orcid.org/0000-0002-3577-5688}{0000-0002-3577-5688}};
+\end{tikzpicture}
+\vspace*{64bp}
+\itshape
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{\cvlabelwidth}@{\hspace{\colgap}}>{\raggedright\arraybackslash}p{\detailwidth}@{}}
+
+
+\cvitem{CONTACT INFORMATION}{\cvnarrow{Email: igonnell@sissa.it\par\vspace{3bp}Address: SISSA, Via Bonomea 265, 34136, Trieste, Italy\par\vspace{3bp}Date of birth: Dec 24, 1999\par\vspace{3bp}Nationality: Italian}}
+
+\cvdivider
+
+\cvheading{EXPERIENCE}
+
+\cventry{Wien, Austria}{Mar 2026 - Present}{Visiting Ph.D student}{University of Wien}{Visiting Ph.D student at the Department of Mathematics, University of Vienna, in the \textit{Computational PDEs }group led by Prof. Olga Mula.}
+
+\cventry{Trieste, Italy}{Oct 2025 - Present}{President of SISSA SIAM students chapter}{SISSA SIAM student chapter}{}
+
+\cventry{Trieste, Italy}{Oct 2023 - Present}{Ph.D student}{SISSA}{Ph.D in Mathematical Analysis, Modelling, and Applications. Supervisors: Prof. Gianluigi Rozza, Prof. Olga Mula, Dr. Federico Pichi.}
+
+\cventry{Trieste, Italy}{Mar 2022 - Sep 2022}{Internship researcher}{SISSA Mathlab}{Research and implementation of deep-learning-based model order reduction methods for parametric time-dependent problems.}
+
+\cventry{Pisa, Italy}{Mar 2021 - Sep 2021}{Internship researcher}{Evidence s.r.l.}{Research on deep learning software for Real-time operative systems on low-power devices, with a focus on Microcontroller applications.}
+
+\cvdivider
+
+\cvheading{EDUCATION}
+
+\cventry{Trieste, Italy}{Oct 2021 - Oct 2023}{Master Degree in Data Science and Scientific Computing}{University of Trieste, in collaboration with SISSA, ICTP, University of Udine}{Graduation mark: 110/110, cum laude.\par\vspace{3bp}Thesis: \textit{Numerical Approaches to Stochastic Diflerential Equations for parametric Bifurcation Problems.}}
+
+\cventry{Pisa, Italy}{Sep 2018 - Sep 2021}{Bachelor degree in Electronic Engineering}{University of Pisa}{Graduation mark: 110/110, cum laude.\par\vspace{3bp}Thesis: \textit{Deployment of Deep Learning models on Microcontrollers.}}
+
+\cvdivider
+
+\cvlabel{LANGUAGES} & \cvlabel{SKILLS}\\*[7bp]
+
+\cvbold{English}\par\vspace{2.5bp}Advanced. TOEFL iBT\par\vspace{\cvitemsep}\cvbold{Italian}\par\vspace{2.5bp}Native & \cvnarrow{\begin{tabular}[t]{@{}p{0.5\detailwidth}@{}l@{}}\cvbold{C++} & \cvbold{Python}\cvrowend\cvbold{Fenics} & \cvbold{Tensorflow}\cvrowend\cvbold{Latex} & \cvbold{Linux}\cvrowend\cvbold{Pytorch} & \cvbold{Deal.II}\end{tabular}}\\
+
+\cvdivider
+
+\cvitem{HONORS \& AWARDS}{\cvbold{OWLG grant }- (august 2025)\par\vspace{5.55bp}Financial support for doctoral researchers for participation in Oberwolfach Workshop \textit{"Computation and Learning in High Dimensions"}. This program has been approved by the Leibniz-Gemeinschaft within the \textit{"Pakt für Forschung und Innovation"}.}
+
+\cvitem{}{\cvbold{GSSI financial support }- (may 2025)\par\vspace{5.55bp}Financial support for the partecipation to the GSSI workshop \textit{"Hidden structures in dynamical systems optimization and machine learning"}, as part of the intensive trimester in \textit{"Particles, Fluids and Patterns: Analytical and Computational Challenges"}}
+
+\cvitem{}{\cvbold{ERCOFTAC grant }- (\textit{august 2023})\par\vspace{5.55bp}Financial support for participating in the Summer School \textit{"Stochastics in Fluids" }held in Prague.}
+
+\cvitem{}{\cvbold{SISSA fellowship - }\textit{(september 2021)}\par\vspace{5.55bp}Two-years merit scolarship awarded by SISSA for the Master Degree of Data Science and Scientific Computing.}
+
+\cvitem{}{\cvbold{Scolarship Collegio Luciano Fonda - }\textit{(september 2021)}\par\vspace{5.55bp}Two-years merit scholarship awarded by the Collegio Universitario Luciano Fonda: an institution for the promotion of high-level formation which aims to promote excellence in studies by welcoming deserving young people from all over the world.}
+
+\cvitem{}{\cvbold{Huawei University Challenge Italy - }\textit{(november 2020)}\par\vspace{5.55bp}Ideation and realization of a proptotipe awarded with the third place in the Huawei competition between university and phd students all over the nation, in the field of Real-Time Intelligent and Automotive Applications.}
+
+\cvdivider
+
+\cvpublication{PUBLICATIONS}{Gonnella, I. C., Mula, O., Pichi, F., \& Rozza, G. (2026). \cvbold{A Dynamical Approximation Scheme on the Stiefel Manifold for Wasserstein Gradient Flows.} \textit{arXiv preprint arXiv:2607.17235.} DOI: 10.48550/arXiv.2607.17235.}
+
+\cvpublication{}{Gonnella, I. C., Khamlich, M., Pichi, F., \& Rozza, G. (2026). \cvbold{A Stochastic Perturbation Approach to Nonlinear Bifurcating Problems.} \textit{Journal of Scientific Computing, 108(1), 20.} DOI: 10.1007/s10915-026-03338-0.}
+
+\cvpublication{}{Venier, G., Gonnella, I. C., Pichi, F., \& Rozza, G. (2026). \cvbold{Stochastic bifurcation analysis via polynomial chaos: consistency and convergence of branch-approximating solutions.} \textit{arXiv preprint arXiv:2605.31288.} DOI: 10.48550/arXiv.2605.31288.}
+
+\cvpublication{}{Gonnella, I. C., Pichi, F., \& Rozza, G. (2026). \cvbold{Nonlinear Reduction Strategies for Data Compression: A Comprehensive Comparison from Diffusion to Advection Problems.} \textit{Scientific Machine Learning: Emerging Topics, SEMA SIMAI Springer Series, 42, 177–198.} DOI: 10.1007/978-3-032-11527-0\_9.}
+
+\cvpublication{}{Gonnella, I. C., Hess, M. W., Stabile, G., \& Rozza, G. (2023). \cvbold{A two-stage deep learning architecture for model reduction of parametric time-dependent problems.} \textit{Computers \& Mathematics with Applications, 149, 115–127.} DOI: 10.1016/j.camwa.2023.08.026.}
+
+\cvdivider
+
+\cvpublication{THESIS CO-\newline SUPERVISION}{Giacomo Venier (2025). \cvbold{A Stochastic Investigation of Bifurcating Phenomena via Polynomial Chaos Expansion.} \textit{M.Sc. in Mathematics, University of Trieste, jointly supervised with Dr. Federico Pichi and Prof. Gianluigi Rozza.}}
+
+\cvdivider
+
+\cvitem{PRESENTATIONS}{\cvbold{Dynamics Cafè }\textit{(November 2026, online seminar group) – invited talk }"\textit{Dynamical Reduced Order Approximation of Wasserstein Gradient Flows}".}
+
+\cvitem{}{\cvbold{MORe }\textit{(November 2026, Milano)}\cvbold{\textit{ }}\cvbold{- }\textit{invited talk}\cvbold{ }"\textit{Dynamical Reduced Order Approximation of Wasserstein Gradient Flows}".}
+
+\cvitem{}{\cvbold{GIMC }\textit{(June 2026, Pisa)}\cvbold{\textit{ }}\cvbold{- }\textit{invited talk}\cvbold{ }"\textit{Dynamical Reduced Order Approximation of Wasserstein Gradient Flows}".}
+
+\cvitem{}{\cvbold{Joint GNCS-SIAM Chapters Meeting }(january2026, Politecnico di Milano) - invited talk "\textit{Dynamical Reduced Order Approximation of Wasserstein Gradient Flows}".}
+
+\cvitem{}{\cvbold{YIC }\textit{(september 2025, Pescara) - invited talk "Nonlinear ROM for Gradient Flow Dynamics" in the mini- symposium "Advances in Control and Model Order Reduction for Simulation Science".}}
+
+\cvitem{}{\cvbold{SIMAI }(september 2025, SISSA, Trieste) - invited talk "\textit{A stochastic perturbation approach to nonlinear bifurcating problems}" in the mini-symposium "\textit{Scientific Machine Learning for the Numerical Analysis of Large-Scale Complex and Multiscale Dynamical Systems}".}
+
+\cvitem{}{\cvbold{YMMOR }(may 2025, SISSA, Trieste) - invited talk "\textit{A metric perspective on Reduced Order Models: Wasserstein Gradient Flows formulation for Advection-Diflusion dynamics}".}
+
+\cvitem{}{\cvbold{Hidden structures in dynamical systems optimization and machine learning }(may 2025, GSSI, L'Aquila) - poster presentation "Dynamical Approximation of Lagrangian schemes to e ciently solve Wasserstein Gradient Flows".}
+
+\cvitem{}{\cvbold{Joint GNCS-SIAM Chapters Meeting }(february 2025, Pavia) - poster presentation "Stochastic perturbation approach to bifurcating PDEs".}
+
+\cvitem{}{\cvbold{Uncertainty Quantification for High-Dimensional Problems }(november 2024, CWI, Amsterdam) - poster presentation "Stochastic perturbation approach to bifurcating PDEs".}
+
+\cvitem{}{\cvbold{Stochastics in Fluids }\textit{(}august 2023, Prague\textit{) - }poster presentation \textit{"Stochastic perturbation approach to bifurcating PDEs".}}
+
+\cvdivider
+
+\cvitem{TEACHING ACTIVITIES}{\cvbold{Mathematical Optimisation }(2023, University of Trieste)\par\vspace{6.65bp}Tutor for the mathematical optimization master's course taught by Prof. Lorenzo Castelli.}
+
+\cvdivider
+
+\cvitem{EVENTS ORGANIZATION}{\cvbold{SISSA women in mathematics }(april 2025 and may 2026)\par\vspace{6.65bp}An interactive discussion panel about the gender gap in academia, networking opportunities, and talks by 3 SISSA alumnae.}
+
+\cvdivider
+
+\cvitem{LINKS}{\cvbold{GitHub:} \url{https://github.com/ICGonnella}\par\vspace{\cvitemsep}\cvbold{Linkedin:} \url{https://www.linkedin.com/in/isabella-carla-gonnella-225a92213}\par\vspace{\cvitemsep}\cvbold{Google Scholar:} \url{https://scholar.google.com/citations?user=Lejdc3QAAAAJ&hl=it&oi=ao}}
+
+\end{longtable}
+
+\end{document}

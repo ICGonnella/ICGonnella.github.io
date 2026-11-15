@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>$page_title</title>
+  <meta name="description" content="$description">
+  <link rel="canonical" href="$page_url">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="$page_title">
+  <meta property="og:description" content="$description">
+  <meta property="og:url" content="$page_url">
+  <meta property="og:image" content="${url}${portrait}">
+  <meta property="og:image:alt" content="$name">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+  <script type="application/ld+json">$structured_data</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-layout">
+    <aside class="sidebar" aria-label="Profile">
+      <div class="profile">
+        <img class="portrait" src="$portrait" alt="$name" width="176" height="176" fetchpriority="high">
+        <div class="identity">
+          <h1>Isabella Carla<br>Gonnella</h1>
+          <p class="role">$role</p>
+          <p class="affiliation"><a href="https://www.sissa.it/">$affiliation</a> · $location</p>
+        </div>
+      </div>
+      <nav class="profile-links" aria-label="Email and academic profiles">
+        <a class="sidebar-email" href="mailto:$email"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg><span>$email</span></a>
+        <a href="$scholar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 2v6c4 3 8 3 12 0v-6M22 9v8"/></svg><span>Google Scholar</span><span class="external" aria-hidden="true">↗</span></a>
+        <a href="$linkedin"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v7m0-10v.1M12 17v-7m0 3c0-4 5-4 5 0v4"/></svg><span>LinkedIn</span><span class="external" aria-hidden="true">↗</span></a>
+      </nav>
+    </aside>
+    <div class="content-column">
+      <nav class="main-nav" aria-label="Main navigation">
+        $navigation
+      </nav>
+      <main id="main">
+        $main_content
+      </main>
+      <footer class="site-footer"><a href="$top_anchor">Back to top <span aria-hidden="true">↑</span></a></footer>
+    </div>
+  </div>
+  <p id="copy-status" class="visually-hidden" role="status" aria-live="polite"></p>
+</body>
+</html>
